@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { MdMenu } from "react-icons/md";
+import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -17,7 +19,7 @@ const Navbar = () => {
               to="home"
               smooth={true}
               duration={500}
-              className="mr-4 text-2xl font-redressed text-gray-800 font-semibold"
+              className="mr-4 text-2xl font-redressed text-gray-800 font-semibold hover:text-indigo-500"
             >
               Barcardi
             </Link>
@@ -71,37 +73,7 @@ const Navbar = () => {
               className="text-slate-800 hover:text-gray-500 focus:outline-none"
               onClick={toggleMenu}
             >
-              {isOpen ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-              ) : (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              )}
+              {isOpen ? <MdMenu size={30} /> : <RxCross2 size={30} />}
             </button>
           </div>
         </div>

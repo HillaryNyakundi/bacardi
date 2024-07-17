@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import FooterList from "./FooterList";
 import { MdFacebook } from "react-icons/md";
 import {
@@ -17,8 +17,10 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row justify-between pt-8 pb-6">
           <div className="flex items-center justify-center m-2">
             <Link
-              to="/"
-              className="text-2xl font-redressed text-gray-800 font-semibold"
+              to="home"
+              smooth={true}
+              duration={500}
+              className="text-2xl font-redressed font-semibold text-gray-800"
             >
               Barcardi
             </Link>
@@ -26,21 +28,93 @@ const Contact = () => {
 
           <FooterList>
             <h3 className="text-base font-bold mb-2">ABOUT US</h3>
-            <Link to="#">About Barcardi</Link>
-            <Link to="#">Contact Us</Link>
-            <Link to="#">Media</Link>
-            <Link to="#">Career</Link>
-            <Link to="#">FAQ</Link>
-            <p>&copy; {new Date().getFullYear()} Barcardi</p>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              About Barcardi
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              Contact Us
+            </Link>
+            <Link
+              to="#"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              Media
+            </Link>
+            <Link
+              to="#"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              Career
+            </Link>
+            <Link
+              to="#"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              FAQ
+            </Link>
+            <p className="text-gray-800 hover:text-indigo-500">
+              &copy; {new Date().getFullYear()} Barcardi
+            </p>
           </FooterList>
 
           <FooterList>
             <h3 className="text-base font-bold mb-2">Links</h3>
-            <Link to="/">Home</Link>
-            <Link to="/flavours">Flavour</Link>
-            <Link to="/products">Product</Link>
-            <Link to="/about-us">About Us</Link>
-            <Link to="/contact-us">Contact Us</Link>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              Home
+            </Link>
+            <Link
+              to="flavour"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              Flavour
+            </Link>
+            <Link
+              to="product"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              Product
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              About Us
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-indigo-500"
+            >
+              Contact Us
+            </Link>
           </FooterList>
 
           <FooterList>
