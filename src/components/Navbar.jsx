@@ -73,7 +73,7 @@ const Navbar = () => {
               className="text-slate-800 hover:text-gray-500 focus:outline-none"
               onClick={toggleMenu}
             >
-              {isOpen ? <MdMenu size={30} /> : <RxCross2 size={30} />}
+              {isOpen ? <RxCross2 size={30} /> : <MdMenu size={30} />}
             </button>
           </div>
         </div>
